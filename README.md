@@ -1,23 +1,33 @@
 # AI Trend Finder
 
-This project collects trending posts from Reddit and will use AI to identify popular topics and generate blog ideas.
+This project collects trending topics from multiple public data sources and uses AI to identify emerging trends and generate blog ideas.
 
-## Features
-- Fetches top posts from Reddit
-- Displays trending titles
+## Data Sources
+- Google Trends (search interest over time)
+- Hacker News (tech news and discussions)
+
+## Features (MVP)
+- Fetch trending search terms from Google Trends
+- Retrieve top posts from Hacker News
+- Combine signals into a simple trend list
+
+## Goal
+To build an AI-assisted system that helps identify content ideas for blogging based on real-world trend data.
 
 ## Tech Stack
 - Python
-- Reddit API (PRAW)
+- Google Trends API (pytrends)
+- Hacker News public API
 
 ## Next Steps
-- Add AI summarization
-- Detect trending topics
-- Generate blog content ideas
+- Add AI summarisation (LLM)
+- Score trends based on engagement
+- Generate blog post ideas automatically
 
 ## How to Run
-1. Install dependencies:
-   pip install -r requirements.txt
 
-2. Run the script:
+1. Install dependencies:
+   pip install pytrends requests
+
+2. Run script:
    python main.py
